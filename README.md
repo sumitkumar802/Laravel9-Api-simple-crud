@@ -9,7 +9,10 @@ Php artisan migrate
 Then goes to Post Model
 Add $fillable
 And then goes to api.php
+
 Route::apiResource(‘posts’, PostController::class);
+Route::apiReource('products', ProductController::class);
+
 Now write logic inside controller
 Php artisan make:factory Post –model=Post
 Inside definition function and  return array:
@@ -35,3 +38,10 @@ Php artisan db:seed --class=Database\Seeders\PostsTableSeeder
 git config –list
 ctrl+shift+esc
 git init in a new project
+
+
+{
+  
+  "title":"hello dolly",
+  "content":"you are you"
+}
